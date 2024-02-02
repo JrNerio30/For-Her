@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+body{
+  font-family: 'Dancing Script', cursive;
+  background: radial-gradient(circle, rgba(255,3,122,1) 0%, rgba(195,7,62,1) 27%, rgba(143,11,11,1) 80%);
+}
+
+main#Valentine{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+#Valentine h1{
+  color: red;
+  font-size: clamp(3rem, 10vw, 4vw);
+  text-align: center;
+}
+
+#Valentine img{
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+}
+
+.buttons{
+  margin-top: 50px;
+  display: flex;
+  gap: 2rem;
+}
+
+#Valentine button{
+  background-color: red;
+  text-decoration: none;
+  color: white;
+  padding: 20px 50px;
+  font-weight: bold;
+  font-size: 30px;
+  border-radius: 50px;
+  border: none;
+  cursor: pointer;
+}
+
+#Valentine button:hover{
+  -webkit-box-shadow: 0px 0px 24px 9px rgba(252, 6, 134, 1);
+  -moz-box-shadow: 0px 0px 24px 9px rgba(252, 6, 134, 1);
+  box-shadow: 0px 0px 24px 9px rgba(252, 6, 134, 1);
+}
+
+#Valentine button:active{
+  -webkit-box-shadow: inset 0px 0px 24px 9px rgba(252, 6, 134, 1);
+  -moz-box-shadow: inset 0px 0px 24px 9px rgba(252, 6, 134, 1);
+  box-shadow: inset 0px 0px 24px 9px rgba(252, 6, 134, 1);
+  scale: 0.9;
+}
+
+
+@media (max-width: 768px) {
+  #Valentine img{
+    width: 300px;
+    height: 300px;
+  }
+}
+
